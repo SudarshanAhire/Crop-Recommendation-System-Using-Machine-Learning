@@ -58,9 +58,9 @@ import numpy as np
 import pickle
 
 # Importing model and scalers
-model = pickle.load(open(r'c:\Users\Sudarshan Ahire\OneDrive\Desktop\ppppppppp\Crop-Recommendation-System-Using-Machine-Learning\model.pkl', 'rb'))
-sc = pickle.load(open(r'c:\Users\Sudarshan Ahire\OneDrive\Desktop\ppppppppp\Crop-Recommendation-System-Using-Machine-Learning\standscaler.pkl', 'rb'))
-ms = pickle.load(open(r'c:\Users\Sudarshan Ahire\OneDrive\Desktop\ppppppppp\Crop-Recommendation-System-Using-Machine-Learning\minmaxscaler.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
+sc = pickle.load(open('standscaler.pkl', 'rb'))
+ms = pickle.load(open('minmaxscaler.pkl', 'rb'))
 
 # Creating flask app
 app = Flask(__name__)
